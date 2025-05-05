@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bellefair&family=Butcherman&family=Creepster&family=Nosifer&family=Press+Start+2P&display=swap"
+		rel="stylesheet">
+	<link rel="shortcut icon" href="./images/favicon.jpg" type="image/x-icon">
+	<link rel="stylesheet" href="./dist/main.css">
+	<title>Detona</title>
+</head>
+
+<body>
+
+	<div class="conteiner">
+
+		<div class="menu__score">
+			<h2 class="menu__score__titulo">Your Score</h2>
+			<h2 class="score">0</h2>
+		</div>
+		<div class="menu__time">
+			<h2 class="menu__time__titulo">Time</h2>
+			<h2 class="time">0</h2>
+			<button class="iniciar">Play game</button>
+			<button class="Pausar">Pausar</button>
+			<div id="countdown"></div>
+		</div>
+		<div class="menu__live">
+			<img src="./images/player.png" alt="">
+			HP:<h2 class="lives">100 </h2>
+		</div>
+	</div>
+	<div class="painel">
+		<div class="painel__row">
+			<div class="square" id="1"></div>
+			<div class="square" id="2"></div>
+			<div class="square" id="3"></div>
+		</div>
+		<div class="painel__row">
+			<div class="square enemy" id="4"></div>
+			<div class="square" id="5"></div>
+			<div class="square" id="6"></div>
+		</div>
+		<div class="painel__row">
+			<div class="square" id="7"></div>
+			<div class="square" id="8"></div>
+			<div class="square" id="9"></div>
+		</div>
+
+	</div>
+	</div>
+
+
+	<div id="gameOverModal" class="modal">
+		<div class="modal-content">
+			<h2 class="fim">Fim de Jogo!</h2>
+			<p class="scorefinal">Sua pontuação final foi: <span id="finalScore"></span></p>
+			<p class="scorelive">Vc terminou com HP: <span class="finallive"></span></p>
+			<button class="resetar">Recomeçar </button>
+		</div>
+	</div>
+</body>
+<script src="./script/main.js">
+</script>
+
+</html>

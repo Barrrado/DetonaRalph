@@ -1,0 +1,48 @@
+.modal {
+	display: none; /* Inicialmente oculto */
+	position: fixed; /* Fica fixo na tela */
+	z-index: 1; /* Garante que fique sobre outros elementos */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto; /* Habilita scroll se o conteúdo for grande */
+	background-color: rgba(0, 0, 0, 0.4); /* Fundo preto com opacidade */
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; /* Centraliza verticalmente e horizontalmente */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%; /* Largura do modal */
+	border-radius: 5px;
+	position: relative;
+}
+#finalScore {
+	font-weight: bold;
+	color: blue;
+}
+.scorefinal,
+.scorelive,
+.fim {
+	padding: 5px;
+}
+.finallive {
+	color: red;
+}
+
+.resetar {
+	background-color: #4caf50;
+	color: white;
+	padding: 10px 15px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+.resetar:hover {
+	background-color: #45a049;
+}

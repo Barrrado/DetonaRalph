@@ -1,0 +1,16 @@
+{
+	"name": "detona",
+	"version": "1.0.0",
+	"description": "",
+	"license": "ISC",
+	"author": "",
+	"type": "commonjs",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass ./src/styles/main.scss:./dist/main.css --watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"devDependencies": {
+		"sass": "^1.87.0"
+	}
+}
